@@ -1,0 +1,59 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .carousel-caption {
+        margin-top: -40px;
+        width: 100%;
+    }
+
+    .carousel_title {
+        font-size: .9rem;
+    }
+
+    .carousel_content {
+        font-size: 0.7rem;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .btn-carousel {
+        padding: 6px 40px;
+        font-size: 0.7rem;
+    }
+
+    #services h1,
+    #portfolio h1,
+    #feature h1,
+    #team h1,
+    #pricing h1,
+    #contact h1,
+    .contact-info,
+    .contact_title {
+        font-size: 1.4rem;
+    }
+
+    /* =========================== Portfolio ========================= */
+
+    .contact-info {
+        margin-top: 30px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+}
