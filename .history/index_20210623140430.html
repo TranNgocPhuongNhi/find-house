@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindHouse</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="vendors/css/fontawesome-pro-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <link rel="shortcut icon" href="resources/img/logo.png">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__nav-logo">
+                    <img src="resources/img/logo.png" alt="logo" />
+                    <span>FindHouse</span>
+                </div>
+                <ul class="header__nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item nav-listing">
+                        <a href="#">
+                            Listing
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav-item-listing">
+                            <li>List 1</li>
+                            <li>List 2</li>
+                            <li>List 3</li>
+                            <li>List 4</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#">Project</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fal fa-user"></i>
+                            Login / Register
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fal fa-plus"></i>
+                            Create Listing
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__container">
+                <div class="header__container-content">
+                    <h1 class="header__container-title">Find Your Dream Home</h1>
+                    <p class="header__container-text">From as low as $10 per day with limited time offer discounts.</p>
+                    <div class="header__container-button">
+                        <button class="btn">Buy</button>
+                        <button class="btn btn-white">Rent</button>
+                    </div>
+                    <div class="header__container-search">
+                        <ul class="search__list">
+                            <li class="search__list-item">
+                                <input type="text" placeholder="Enter keyword...">
+                            </li>
+                            <li class="search__list-item type-list">
+                                <button class="btn-search">
+                                    Property type
+                                    <i class="fas fa-sort-down"></i>
+                                </button>
+                                <ul class="search__type-list">
+                                    <li class="search__type-list-item">
+                                        Apartment
+                                        <i class="fal fa-check"></i>
+                                    </li>
+                                    <li class="search__type-list-item">Bungalow</li>
+                                    <li class="search__type-list-item">Condo</li>
+                                    <li class="search__type-list-item">House</li>
+                                    <li class="search__type-list-item">Land</li>
+                                    <li class="search__type-list-item">Single Family</li>
+                                </ul>
+                            </li>
+                            <li class="search__list-item search-location">
+                                <input type="text" placeholder="Location"/>
+                                <i class="fal fa-map-marker-alt"></i>
+                            </li>
+                            <li class="search__list-item">
+                                <button class="btn-search">
+                                    Price
+                                    <i class="fas fa-sort-down"></i>
+                                </button>
+                                <!-- Drag Price Slider -->
+                                <div class="search__range-slider">
+                                    <div class="price-wrap">
+                                        <span class="price-min">$900</span>
+                                        <span class="price-max">$2100</span>
+                                    </div>
+                                    <input type="range" id="input-left" min="0" max="100" value="20">
+                                    <input type="range" id="input-right" min="0" max="100" value="80">
+                                    <div class="range-slider">
+                                        <div class="track"></div>
+                                        <div class="range"></div>
+                                        <div class="thumb left"></div>
+                                        <div class="thumb right"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search__list-item item-advanced">
+                               <button class="btn-search">
+                                   Advanced
+                                   <i class="fal fa-ellipsis-v"></i>
+                               </button>
+                               <div class="advanced__option">
+                                    <h4 class="advanced__option-heading">Amenities</h4>
+                                    <ul class="advanced__option-list">
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Air Conditioning</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Barbeque</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Dryer</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Gym</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Laundry</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Lawn</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Miccontainerave</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Outdoor Shower</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Refrigerator</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Sauna</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Swimming Pool</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">TV Cable</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Washer</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">WiFi</label>
+                                        </li>
+                                        <li class="advanced__option-item">
+                                            <input type="checkbox" class="item-check">
+                                            <label class="advanced__option-item-label">Window Coverings</label>
+                                        </li>
+                                    </ul>
+                                    <div class="advanced__option-others">
+                                        <ul class="advanced__option-others-list">
+                                            <li>
+                                                Bathrooms
+                                                <i class="fas fa-sort-down"></i>
+                                                <ul class="advanced__options-others-select">
+                                                    <li>
+                                                        1
+                                                        <i class="fal fa-check"></i>
+                                                    </li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                    <li>4</li>
+                                                    <li>5</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Bedrooms
+                                                <i class="fas fa-sort-down"></i>
+                                                <ul class="advanced__options-others-select">
+                                                    <li>
+                                                        1
+                                                        <i class="fal fa-check"></i>
+                                                    </li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                    <li>4</li>
+                                                    <li>5</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Year Built
+                                                <i class="fas fa-sort-down"></i>
+                                                <ul class="advanced__options-others-select">
+                                                    <li>
+                                                        2021
+                                                        <i class="fa fa-check"></i>
+                                                    </li>
+                                                    <li>2020</li>
+                                                    <li>2019</li>
+                                                    <li>2018</li>
+                                                    <li>2017</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Built-up area
+                                                <i class="fas fa-sort-down"></i>
+                                                <ul class="advanced__options-others-select">
+                                                    <li>
+                                                        Adana
+                                                        <i class="fal fa-check"></i>
+                                                    </li>
+                                                    <li>Ankara</li>
+                                                    <li>Bursa</li>
+                                                    <li>Istabul</li>
+                                                    <li>Konya</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <span>Hide</span>
+                                    </div>
+                               </div>
+                            </li>
+                            <li class="search__list-item item-btn-search">
+                                <button class="btn">Search</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="feature">
+        <div class="container">
+            <div class="feature__title section-title">
+                <h1>Featured Properties</h1>
+                <p>Handpicked properties by our team.</p>
+            </div>
+            <div class="feature__slider">
+                <div class="feature__item">
+                    <div class="feature__item-header">
+                        <img src="resources/img/fp1.jpg" alt="img">
+                        <p class="feature__item-aim">For Rent</p>
+                        <div class="feature__item-price">
+                            <h1>$1,000</h1>
+                            <span>/mo</span>
+                        </div>
+                        <div class="feature__item-interact">
+                            <i class="fal fa-exchange"></i>
+                            <i class="fal fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="feature__item-detail">
+                        <p class="feature__item-type">Apartment</p>
+                        <a href="#" class="feature__item-status">Renovated Apartment</a href="#">
+                        <div class="feature__item-address">
+                            <i class="fal fa-map-marker-alt"></i>
+                            <span>1421 San Pedro St, Los Angeles, CA 90015</span>
+                        </div>
+                        <div class="feature__item-desc">
+                            <span class="feature__item-desc--beg">Beds: 4</span>
+                            <span class="feature__item-desc--bath">Baths: 2</span>
+                            <span class="feature__item-desc--sqft">Sq Ft: 200</span>
+                        </div>
+                        <div class="feature__item-info">
+                            <div class="feature__item-user">
+                                <img src="resources/img/author.png" alt="img">
+                                <span>Mr.Paul</span>
+                            </div>
+                            <span class="feature__item-year">4 years</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__item-header">
+                        <img src="resources/img/fp2.jpg" alt="img">
+                        <p class="feature__item-aim">For Rent</p>
+                        <div class="feature__item-price">
+                            <h1>$800</h1>
+                            <span>/mo</span>
+                        </div>
+                        <div class="feature__item-interact">
+                            <i class="fal fa-exchange"></i>
+                            <i class="fal fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="feature__item-detail">
+                        <p class="feature__item-type">Apartment</p>
+                        <a href="#" class="feature__item-status">Renovated Apartment</a href="#">
+                        <div class="feature__item-address">
+                            <i class="fal fa-map-marker-alt"></i>
+                            <span>1421 San Pedro St, Los Angeles, CA 90015</span>
+                        </div>
+                        <div class="feature__item-desc">
+                            <span class="feature__item-desc--beg">Beds: 4</span>
+                            <span class="feature__item-desc--bath">Baths: 2</span>
+                            <span class="feature__item-desc--sqft">Sq Ft: 200</span>
+                        </div>
+                        <div class="feature__item-info">
+                            <div class="feature__item-user">
+                                <img src="resources/img/author.png" alt="img">
+                                <span>Mr.Paul</span>
+                            </div>
+                            <span class="feature__item-year">4 years</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__item-header">
+                        <img src="resources/img/fp3.jpg" alt="img">
+                        <p class="feature__item-aim">For Rent</p>
+                        <div class="feature__item-price">
+                            <h1>$2,500</h1>
+                            <span>/mo</span>
+                        </div>
+                        <div class="feature__item-interact">
+                            <i class="fal fa-exchange"></i>
+                            <i class="fal fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="feature__item-detail">
+                        <p class="feature__item-type">Apartment</p>
+                        <a href="#" class="feature__item-status">Renovated Apartment</a href="#">
+                        <div class="feature__item-address">
+                            <i class="fal fa-map-marker-alt"></i>
+                            <span>1421 San Pedro St, Los Angeles, CA 90015</span>
+                        </div>
+                        <div class="feature__item-desc">
+                            <span class="feature__item-desc--beg">Beds: 4</span>
+                            <span class="feature__item-desc--bath">Baths: 2</span>
+                            <span class="feature__item-desc--sqft">Sq Ft: 200</span>
+                        </div>
+                        <div class="feature__item-info">
+                            <div class="feature__item-user">
+                                <img src="resources/img/author.png" alt="img">
+                                <span>Mr.Paul</span>
+                            </div>
+                            <span class="feature__item-year">4 years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="property-city">
+        <div class="container">
+            <div class="find__title section-title">
+                <h1>Find Properties In These Cities</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="property-city__thumb">
+                <div class="property-city__thumb-item thumb__item-1-3">
+                    <img src="resources/img/pc1.jpg" alt="img city" class="property-city__thumb-img">
+                    <div class="thumb__content">
+                        <h4 class="thumb__content-heading">Miami</h4>
+                        <span class="thumb__content-desc">24 Properties</span>
+                    </div>
+                </div>
+                <div class="property-city__thumb-item thumb__item-3-1">
+                    <img src="resources/img/pc2.jpg" alt="img city" class="property-city__thumb-img">
+                    <div class="thumb__content">
+                        <h4 class="thumb__content-heading">Lost Angeles</h4>
+                        <span class="thumb__content-desc">18 Properties</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-city__thumb">
+                <div class="property-city__thumb-item thumb__item-3-1">
+                    <img src="resources/img/pc3.jpg" alt="img city" class="property-city__thumb-img">
+                    <div class="thumb__content">
+                        <h4 class="thumb__content-heading">New York</h4>
+                        <span class="thumb__content-desc">89 Properties</span>
+                    </div>
+                </div>
+                <div class="property-city__thumb-item thumb__item-1-3">
+                    <img src="resources/img/pc4.jpg" alt="img city" class="property-city__thumb-img">
+                    <div class="thumb__content">
+                        <h4 class="thumb__content-heading">Florida</h4>
+                        <span class="thumb__content-desc">47 Properties</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="container">
+            <div class="why__title section-title">
+                <h1>Why Choose Us</h1>
+                <p>We provide full service at every step.</p>
+            </div>
+            <div class="why__content">
+                <div class="why__content-item">
+                    <i class="fal fa-hand-holding-seedling"></i>
+                    <h5>Trusted By Thousands</h5>
+                    <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                </div>
+                <div class="why__content-item">
+                    <i class="fas fa-home-heart"></i>
+                    <h5>Wide Renge Of Properties</h5>
+                    <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                </div>
+                <div class="why__content-item">
+                    <i class="fal fa-hand-holding-usd"></i>
+                    <h5>Financing Made Easy</h5>
+                    <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="testimonial__title section-title">
+                <h1>Testimonial</h1>
+                <p>Here could be a nice sub title</p>
+            </div>
+            <div class="testimonial__content">
+                <div class="testimonial__item">
+                    <img src="resources/img/1.jpg" alt="img">
+                    <div class="testimonial__info">
+                        <p class="testimonial__info-name">Augusta Silva</p>
+                        <p class="testimonial__info-specialize">Sales Manager</p>
+                    </div>
+                    <p class="testimonial__text">Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles">
+        <div class="container">
+            <div class="articles__title section-title">
+                <h1>Articles & articles</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="articles__slider feature__slider">
+                <div class="articles__item feature__item">
+                    <div class="articles__item-header feature__item-header">
+                        <img src="resources/img/bh1.jpg" alt="img">
+                    </div>
+                    <div class="articles__item-detail feature__item-detail">
+                        <p class="articles__item-type feature__item-type">Business</p>
+                        <a href="#" class="articles__item-status feature__item-status">Bedroom Colors You’ll Never Regret</a>
+                        <div class="articles__item-info feature__item-info">
+                            <div class="articles__item-user feature__item-user">
+                                <img src="resources/img/author.png" alt="img">
+                                <span>Mr.Paul</span>
+                            </div>
+                            <span class="articles__item-year feature__item-year">7 August 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__item feature__item">
+                    <div class="articles__item-header feature__item-header">
+                        <img src="resources/img/bh2.jpg" alt="img">
+                    </div>
+                    <div class="articles__item-detail feature__item-detail">
+                        <p class="articles__item-type feature__item-type">Business</p>
+                        <a href="#" class="articles__item-status feature__item-status">Bedroom Colors You’ll Never Regret</a>
+                        <div class="articles__item-info feature__item-info">
+                            <div class="articles__item-user feature__item-user">
+                                <img src="resources/img/author.png" alt="img">
+                                <span>Mr.Paul</span>
+                            </div>
+                            <span class="articles__item-year feature__item-year">7 August 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__item feature__item">
+                    <div class="articles__item-header feature__item-header">
+                        <img src="resources/img/bh3.jpg" alt="img">
+                    </div>
+                    <div class="articles__item-detail feature__item-detail">
+                        <p class="articles__item-type feature__item-type">Business</p>
+                        <a href="#" class="articles__item-status feature__item-status">5 Essential Steps for Buying an Investment</a>
+                        <div class="articles__item-info feature__item-info">
+                            <div class="articles__item-user feature__item-user">
+                                <img src="resources/img/author.png" alt="img">
+                                <span>Mr.Paul</span>
+                            </div>
+                            <span class="articles__item-year feature__item-year">7 August 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partner">
+        <div class="container">
+            <div class="partner__title section-title">
+                <h1>Our Partner</h1>
+                <p>We only work with the best companies around the globe</p>
+            </div>
+            <div class="partner__company">
+                <img src="resources/img/1.png" alt="logo company">
+                <img src="resources/img/2.png" alt="logo company">
+                <img src="resources/img/3.png" alt="logo company">
+                <img src="resources/img/4.png" alt="logo company">
+                <img src="resources/img/5.png" alt="logo company">
+            </div>
+        </div>
+    </section>
+
+    <section id="signup">
+        <div class="container">
+            <div class="signup__content">
+                <div class="signup__intro">
+                    <h1>Become A Real Estate Agent</h1>
+                    <p>We only work with the best companies around the globe</p>
+                </div>
+                <a href="#" class="signup__btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__1">
+                <div class="footer__1--about-site">
+                    <h3 class="footer__title">About Site</h3>
+                    <p>We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.</p>
+                </div>
+                <div class="footer__1--quick-links">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">User's Guide</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Press Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer__1--contact-us">
+                    <h3 class="footer__title">Contact Us</h3>
+                    <ul>
+                        <li><a href="#">info@findhouse.com</a></li>
+                        <li><a href="#">Collins Street West, Victoria</a></li>
+                        <li><a href="#">8007, Australia.</a></li>
+                        <li><a href="#">+1 246-345-0699</a></li>
+                        <li><a href="#">+1 246-345-0695</a></li>
+                    </ul>
+                </div>
+                <div class="footer__1--follow-us">
+                    <h3 class="footer__title">Follow Us</h3>
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-pinterest"></i></li>
+                        <li><i class="fab fa-google"></i></li>
+                    </ul>
+                    <h4>Subc</h4>
+                </div>
+            </div>
+            <div class="footer__2">
+                <ul class="footer__nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Listing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p class="footer__copyright">
+                    © 2020 Find House. Made with love.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Javascript -->
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>   
+     <!-- Popper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+</html>
