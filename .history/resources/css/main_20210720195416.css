@@ -555,6 +555,60 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 
+.range-slider {
+    position: relative;
+    z-index: 1;
+    height: 1rem;
+}
+
+.range-slider .track {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0.8rem;
+    background-color: var(--range);
+}
+
+.range-slider .range {
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    right: 20%;
+    top: 0;
+    bottom: 0;
+    border-radius: 0.8rem;
+    background-color: var(--primary);
+}
+
+.range-slider .thumb {
+    position: absolute;
+    z-index: 3;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    transition: box-shadow 0.3s ease;
+}
+
+.thumb__active{
+    box-shadow: 0 0 0 1rem var(--range);
+}
+
+.thumb.left {
+    cursor: pointer;
+    left: 20%;
+    transform: translate(-1rem, -0.5rem);
+}
+
+.thumb.right {
+    cursor: pointer;
+    right: 20%;
+    transform: translate(1rem, -0.5rem);
+} */
+
 .item-advanced button {
     border: 0;
     width: 10%;

@@ -887,7 +887,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 .feature__button-next {
-    left: 114rem;
+    right: -2rem;
     top: 0;
 }
 

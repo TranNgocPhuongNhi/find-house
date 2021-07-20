@@ -555,6 +555,22 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 
+.thumb__active{
+    box-shadow: 0 0 0 1rem var(--range);
+}
+
+.thumb.left {
+    cursor: pointer;
+    left: 20%;
+    transform: translate(-1rem, -0.5rem);
+}
+
+.thumb.right {
+    cursor: pointer;
+    right: 20%;
+    transform: translate(1rem, -0.5rem);
+} */
+
 .item-advanced button {
     border: 0;
     width: 10%;

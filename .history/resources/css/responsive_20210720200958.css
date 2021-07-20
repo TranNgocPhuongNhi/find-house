@@ -251,6 +251,7 @@
 
     .property-city__thumb {
         justify-content: center;
+        flex-wrap: wrap;
     }
     
     .property-city__thumb-item {

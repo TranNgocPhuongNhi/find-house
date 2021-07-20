@@ -254,7 +254,7 @@
     }
     
     .property-city__thumb-item {
-        width: 100%;
+        width: 100vw;
     }
 
     .why__content,

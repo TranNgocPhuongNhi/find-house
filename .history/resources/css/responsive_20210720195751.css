@@ -329,9 +329,9 @@
         min-width: 94%;
     }
     
-    .feature__button-next {
-        left: 35rem;
-    }
+    /* .feature__button-next {
+        left: 43rem;
+    } */
 
     .footer__1-content {
         flex-wrap: wrap;
