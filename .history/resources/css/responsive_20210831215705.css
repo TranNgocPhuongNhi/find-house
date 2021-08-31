@@ -300,12 +300,7 @@
     }
     
     .advanced__option {
-        top: 25rem;
-    }
-
-    .advanced__option::before  {
-        left: 10rem;
-        right: auto;
+        top: 
     }
 }
 

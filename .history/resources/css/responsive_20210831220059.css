@@ -304,8 +304,8 @@
     }
 
     .advanced__option::before  {
-        left: 10rem;
-        right: auto;
+        left: 0;
+        right: 0;
     }
 }
 

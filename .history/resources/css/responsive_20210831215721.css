@@ -302,11 +302,6 @@
     .advanced__option {
         top: 25rem;
     }
-
-    .advanced__option::before  {
-        left: 10rem;
-        right: auto;
-    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
